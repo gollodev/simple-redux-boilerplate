@@ -4,17 +4,6 @@
   "description": "Simple Redux Boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "react",
-    "redux",
-    "frontend",
-    "app"
-  ],
-  "author": "Jose Lopez",
-  "license": "MIT",
-  "scripts": {
     "clean:build": "rm -rf build && mkdir build",
     "build:html": "node ./bin/buildHtml.js",
     "prestart": "rm -rf build",
@@ -26,11 +15,22 @@
     "test": "mocha --compilers js:babel-core/register,css:./test/unit/cssNullCompiler.js --require ./test/unit/testHelper.js --recursive ./test/unit",
     "test:watch": "npm run test -- --watch"
   },
+  "keywords": [
+    "react",
+    "redux",
+    "frontend",
+    "app"
+  ],
+  "author": "Jose Lopez",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.3.6",
     "classnames": "^2.2.3",
+    "es6-promise": "3.1.2",
     "history": "^2.0.2",
+    "isomorphic-fetch": "2.2.1",
     "lodash": "^4.11.1",
+    "material-ui": "0.14.4",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
